@@ -196,9 +196,9 @@
 #cut1,
 #cut1box {
   position: absolute;
-  padding-top: 200px;
-  left: 680px;
-  width: 550px;
+  padding-top: 170px;
+  left: 690px;
+  width: 535px;
   height: 200px;
   display: block;
   cursor: pointer;
@@ -208,22 +208,22 @@
 #cut2,
 #cut2box {
   position: absolute;
-  padding-top: 80px;
+  padding-top: 50px;
   left: 700px;
   width: 510px;
   height: 450px;
-  display: block;
+  display: none;
   cursor: pointer;
   z-index: 10;
   display: none;
 }
 #pizzabox1 {
   position: absolute;
-  padding-top: 50px;
+  padding-top: 30px;
   left: 650px;
   width: 610px;
   height: 520px;
-  display: none;
+  display: block;
   cursor: pointer;
   z-index: -1;
 }
@@ -246,7 +246,7 @@
   height: 520px;
   display: none;
   cursor: pointer;
-  z-index: -1;
+  z-index: 0;
 }
 
 #order1 {
@@ -310,5 +310,5 @@
   top: 450px;
   cursor: pointer;
   left: 800px;
-  z-index: 5;
+  z-index: -5;
 }
