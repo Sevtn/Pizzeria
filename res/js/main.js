@@ -355,7 +355,7 @@ cookpizza.onclick = () => {
       orderCheck += 25;
       cheese2.style.display = "block";
     }
-  }, 1000);
+  }, 10000);
 };
 
 takepizza.onclick = () => {
