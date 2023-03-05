@@ -1,0 +1,314 @@
+#start {
+  position: absolute;
+  z-index: 0;
+  padding-top: 50px;
+  max-width: 320px;
+  width: 100%;
+  top: 200px;
+  cursor: pointer;
+  left: 40%;
+}
+
+.start:hover {
+  transform: scale(1.3);
+} /*nefunguje*/
+
+#rail {
+  height: 100px;
+  width: 1525px;
+  display: none;
+  z-index: 0;
+}
+
+#cook {
+  position: absolute;
+  top: 400px;
+  display: none;
+  height: 75px;
+  width: 150px;
+  cursor: pointer;
+}
+#cut {
+  position: absolute;
+  top: 200px;
+  display: none;
+  height: 75px;
+  width: 150px;
+  cursor: pointer;
+}
+#cookpizza {
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  display: none;
+  height: 180px;
+  width: 200px;
+  cursor: pointer;
+}
+#takepizza {
+  position: absolute;
+  top: 500px;
+  left: 200px;
+  display: none;
+  height: 150px;
+  width: 200px;
+  cursor: pointer;
+}
+#orders {
+  position: absolute;
+  top: 300px;
+  display: none;
+  height: 75px;
+  width: 150px;
+  cursor: pointer;
+}
+#build {
+  position: absolute;
+  top: 100px;
+  display: none;
+  height: 75px;
+  width: 150px;
+  cursor: pointer;
+}
+
+#pep {
+  position: absolute;
+  top: 720px;
+  left: 425px;
+  display: none;
+  cursor: pointer;
+}
+#cheese {
+  position: absolute;
+  top: 720px;
+  left: 625px;
+  display: none;
+  cursor: pointer;
+}
+#sausage {
+  position: absolute;
+  top: 720px;
+  left: 825px;
+  display: none;
+  cursor: pointer;
+}
+
+#ketchup {
+  position: absolute;
+  top: 720px;
+  left: 1025px;
+  display: none;
+  cursor: pointer;
+}
+
+#dough {
+  position: absolute;
+  top: 720px;
+  left: 1225px;
+  display: none;
+  cursor: pointer;
+}
+
+#dough1 {
+  position: absolute;
+  padding-top: 100px;
+  left: 700px;
+
+  display: none;
+  z-index: 0;
+}
+
+#dough2,
+#dough3 {
+  position: absolute;
+  padding-top: 100px;
+  left: 700px;
+  transform: scale(1.07);
+  display: none;
+  z-index: 0;
+}
+
+#pep1 {
+  position: absolute;
+  padding-top: 80px;
+  left: 700px;
+
+  display: none;
+  z-index: 4;
+}
+#ketchup1 {
+  position: absolute;
+  padding-top: 105px;
+  left: 700px;
+  display: none;
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+#ketchup3 {
+  position: absolute;
+  padding-top: 105px;
+  left: 740px;
+  display: none;
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+#cheese1 {
+  position: absolute;
+  padding-top: 105px;
+  left: 700px;
+  display: none;
+
+  z-index: 3;
+}
+
+#cheese2,
+#cheese3 {
+  position: absolute;
+  padding-top: 105px;
+  left: 750px;
+  width: 430px;
+  display: none;
+  transform: scale(1);
+  z-index: 3;
+}
+
+#sausage1 {
+  position: absolute;
+  padding-top: 80px;
+  left: 700px;
+  display: none;
+
+  z-index: 5;
+}
+
+#pizzacutter {
+  position: absolute;
+  padding-top: 80px;
+  left: 170px;
+  width: 240px;
+  display: none;
+  cursor: pointer;
+  z-index: 0;
+}
+
+#cut1,
+#cut1box {
+  position: absolute;
+  padding-top: 200px;
+  left: 680px;
+  width: 550px;
+  height: 200px;
+  display: block;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+}
+#cut2,
+#cut2box {
+  position: absolute;
+  padding-top: 80px;
+  left: 700px;
+  width: 510px;
+  height: 450px;
+  display: block;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+}
+#pizzabox1 {
+  position: absolute;
+  padding-top: 50px;
+  left: 650px;
+  width: 610px;
+  height: 520px;
+  display: none;
+  cursor: pointer;
+  z-index: -1;
+}
+#pizzabox {
+  position: absolute;
+  padding-top: 550px;
+  left: 50px;
+  width: 610px;
+  height: 520px;
+  display: none;
+  cursor: pointer;
+  z-index: -1;
+}
+
+#pizzabox0 {
+  position: absolute;
+  padding-top: 50px;
+  left: 650px;
+  width: 610px;
+  height: 520px;
+  display: none;
+  cursor: pointer;
+  z-index: -1;
+}
+
+#order1 {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 700px;
+  height: 250px;
+  width: 300px;
+}
+#order2 {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 700px;
+  height: 250px;
+  width: 300px;
+}
+
+#order3 {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 700px;
+  height: 250px;
+  width: 300px;
+}
+
+#order4 {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 700px;
+  height: 250px;
+  width: 300px;
+}
+
+#customer1{
+  display: none;
+  position: absolute;
+  top: 160px;
+  left: 500px;
+  cursor: pointer;
+}
+
+#register{
+  display: none;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 250px;
+  cursor: pointer;
+  left: 200px;
+  z-index: 5;
+}
+#loop{
+  display: none;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 450px;
+  cursor: pointer;
+  left: 800px;
+  z-index: 5;
+}
