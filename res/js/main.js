@@ -51,7 +51,7 @@ const loop = document.getElementById("loop");
 
 //customer logic
 register.onclick = () => {
-  if (orderCheck >= 178&& orderCheck<230) {
+  if (orderCheck >= 178 && orderCheck < 230) {
     customer1.style.display = "none";
     pizzabox0.style.display = "none";
     ordernumber / 0;
@@ -65,7 +65,7 @@ register.onclick = () => {
     cutCount2 / 0;
     orderCheck / 0;
   }
-  if (orderCheck > 300 ) {
+  if (orderCheck > 300) {
     customer1.style.display = "none";
     pizzabox0.style.display = "none";
     ordernumber / 0;
@@ -79,7 +79,7 @@ register.onclick = () => {
     cutCount2 / 0;
     orderCheck / 0;
   }
-  if (orderCheck >= 80&& orderCheck<150) {
+  if (orderCheck >= 80 && orderCheck < 150) {
     customer1.style.display = "none";
     pizzabox0.style.display = "none";
     ordernumber / 0;
@@ -96,61 +96,32 @@ register.onclick = () => {
 };
 
 //order repeat
-loop.onclick= ()=> {
-  
-    
-  
-customer1.style.display="block";
+loop.onclick = () => {
+  customer1.style.display = "block";
 
   let random = Math.floor(Math.random() * 3) + 1;
 
-    if (random == 1) {
-      console.log("cislo 1");
-      //
-      order1.style.display = "block";
-      ordernumber++;
-    }
-    if (random == 2) {
-      console.log("cislo 2");
-      //
-      order2.style.display = "block";
-      ordernumber += 2;
-    }
-    if (random == 3) {
-      console.log("cislo 3");
-      //
-      ordernumber += 3;
-      order3.style.display = "block";
-    }
+  if (random == 1) {
+    console.log("cislo 1");
+    //
+    order1.style.display = "block";
+    ordernumber++;
   }
-
+  if (random == 2) {
+    console.log("cislo 2");
+    //
+    order2.style.display = "block";
+    ordernumber += 2;
+  }
+  if (random == 3) {
+    console.log("cislo 3");
+    //
+    ordernumber += 3;
+    order3.style.display = "block";
+  }
+};
 
 start.onclick = () => {
-  {
-    //tlacitka
-
-    let random = Math.floor(Math.random() * 3) + 1;
-
-    if (random == 1) {
-      console.log("cislo 1");
-      //
-      order1.style.display = "block";
-      ordernumber++;
-    }
-    if (random == 2) {
-      console.log("cislo 2");
-      //
-      order2.style.display = "block";
-      ordernumber += 2;
-    }
-    if (random == 3) {
-      console.log("cislo 3");
-      //
-      ordernumber += 3;
-      order3.style.display = "block";
-    }
-  }
-
   start.style.display = "none";
   rail.style.display = "none";
   cook.style.display = "block";
@@ -159,7 +130,7 @@ start.onclick = () => {
   orders.style.display = "block";
   cut1box.style.display = "none";
   cut2box.style.display = "none";
-  customer1.style.display = "block";
+  customer1.style.display = "none";
   register.style.display = "block";
   loop.style.display = "block";
   body.style.backgroundImage = "url(./res/img/ordersstation.png)";
@@ -184,7 +155,7 @@ build.onclick = () => {
   order3.style.display = "none";
   order4.style.display = "none";
   register.style.display = "none";
-  loop.style.display="none";
+  loop.style.display = "none";
 };
 
 //funkce krabice0
@@ -209,11 +180,15 @@ pizzabox1.onclick = () => {
 pizzabox.onclick = () => {
   pizzabox.style.display = "none";
   pizzabox1.style.display = "block";
-  if (cutCount1 > 0) {
+  if (cutCount1 == 2) {
+    console.log(cutCount1);
+    cut1.style.display = "none";
     cut1box.style.display = "block";
   }
-  if (cutCount2 > 0) {
+  if (cutCount2 == 4) {
+    console.log(cutCount2);
     cut2box.style.display = "block";
+    cut2.style.display = "none";
   }
 };
 
@@ -234,7 +209,7 @@ cut.onclick = () => {
   pizzacutter.style.display = "block";
   register.style.display = "none";
   pizzabox.style.display = "block";
-  loop.style.display="none";
+  loop.style.display = "none";
 };
 //objekt+none ingredience
 orders.onclick = () => {
@@ -252,7 +227,7 @@ orders.onclick = () => {
   pizzabox.style.display = "none";
   customer1.style.display = "block";
   register.style.display = "block";
-  loop.style.display="block";
+  loop.style.display = "block";
 };
 
 cook.onclick = () => {
@@ -271,18 +246,20 @@ cook.onclick = () => {
   pizzabox.style.display = "none";
   customer1.style.display = "none";
   register.style.display = "none";
-  loop.style.display="none";
+  loop.style.display = "none";
 };
 
 //pizza cut
- 
+
 pizzacutter.onclick = () => {
   cut1.style.display = "block";
   cutCount1 += 2;
-  console.log(orderCheck)
+  console.log(cutCount1);
+
   pizzacutter.onclick = () => {
     cut2.style.display = "block";
-    cutCount2 += 2;
+    cutCount2 += 4;
+    console.log(cutCount2);
   };
 };
 
@@ -299,7 +276,6 @@ pep.onclick = () => {
     pep1.style.display = "block";
     orderCheck += 5;
     pepTime += 2;
- 
   }
 };
 ketchup.onclick = () => {
@@ -307,27 +283,23 @@ ketchup.onclick = () => {
     ketchup1.style.display = "block";
     orderCheck += 100; //+100
     ketchupTime += 2;
-  }  
   }
-;
+};
 cheese.onclick = () => {
-   
   if (pizzaOrder >= 1) {
     cheese1.style.display = "block";
     orderCheck += 50; //+50
     cheeseTime += 5;
-    console.log(cheeseTime)
-  }  
+    console.log(cheeseTime);
   }
-;
+};
 sausage.onclick = () => {
   if (pizzaOrder >= 1) {
     sausage1.style.display = "block";
     orderCheck += 200; //+200
     sausageTime += 2;
-  }  
   }
-;
+};
 
 //let hodnoty
 let ordernumber = 0;
@@ -350,9 +322,9 @@ cookpizza.onclick = () => {
       dough1.style.display = "none";
       dough2.style.display = "block";
       orderCheck += 2; //+2
-      console.log(cheeseTime)
+      console.log(cheeseTime);
     }
-    if (cheeseTime == 5) {
+    if (cheeseTime > 1) {
       cheese1.style.display = "none";
       orderCheck += 25;
       cheese2.style.display = "block";
