@@ -51,53 +51,55 @@ const loop = document.getElementById("loop");
 
 //customer logic
 register.onclick = () => {
-  if (orderCheck >= 178&& orderCheck<200) {
+  if (orderCheck >= 178&& orderCheck<230) {
     customer1.style.display = "none";
     pizzabox0.style.display = "none";
-    ordernumber /= 0;
-    pizzaOrder /= 0;
-    doughTime /= 0;
-    cheeseTime /= 0;
-    ketchupTime /= 0;
-    sausageTime /= 0;
-    pepTime /= 0;
-    cutCount1 /= 0;
-    cutCount2 /= 0;
-    orderCheck /= 0;
+    ordernumber / 0;
+    pizzaOrder / 0;
+    doughTime / 0;
+    cheeseTime / 0;
+    ketchupTime / 0;
+    sausageTime / 0;
+    pepTime / 0;
+    cutCount1 / 0;
+    cutCount2 / 0;
+    orderCheck / 0;
   }
-  if (orderCheck >= 300 && orderCheck<350) {
+  if (orderCheck > 300 ) {
     customer1.style.display = "none";
     pizzabox0.style.display = "none";
-    ordernumber /= 0;
-    pizzaOrder /= 0;
-    doughTime /= 0;
-    cheeseTime /= 0;
-    ketchupTime /= 0;
-    sausageTime /= 0;
-    pepTime /= 0;
-    cutCount1 /= 0;
-    cutCount2 /= 0;
-    orderCheck /= 0;
+    ordernumber / 0;
+    pizzaOrder / 0;
+    doughTime / 0;
+    cheeseTime / 0;
+    ketchupTime / 0;
+    sausageTime / 0;
+    pepTime / 0;
+    cutCount1 / 0;
+    cutCount2 / 0;
+    orderCheck / 0;
   }
   if (orderCheck >= 80&& orderCheck<150) {
     customer1.style.display = "none";
     pizzabox0.style.display = "none";
-    ordernumber /= 0;
-    pizzaOrder /= 0;
-    doughTime /= 0;
-    cheeseTime /= 0;
-    ketchupTime /= 0;
-    sausageTime /= 0;
-    pepTime /= 0;
-    cutCount1 /= 0;
-    cutCount2 /= 0;
-    orderCheck /= 0;
+    ordernumber / 0;
+    pizzaOrder / 0;
+    doughTime / 0;
+    cheeseTime / 0;
+    ketchupTime / 0;
+    sausageTime / 0;
+    pepTime / 0;
+    cutCount1 / 0;
+    cutCount2 / 0;
+    orderCheck / 0;
   }
 };
 
 //order repeat
 loop.onclick= ()=> {
-
+  
+    
+  
 customer1.style.display="block";
 
   let random = Math.floor(Math.random() * 3) + 1;
@@ -350,7 +352,7 @@ cookpizza.onclick = () => {
       orderCheck += 2; //+2
       console.log(cheeseTime)
     }
-    if (cheeseTime > 0) {
+    if (cheeseTime == 5) {
       cheese1.style.display = "none";
       orderCheck += 25;
       cheese2.style.display = "block";
