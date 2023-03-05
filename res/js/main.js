@@ -49,9 +49,19 @@ const customer1 = document.getElementById("customer1");
 const register = document.getElementById("register");
 const loop = document.getElementById("loop");
 
+
+let reputace = 0;
+
+counter.innerHTML = `Reputace:  ${reputace}`;
+
+
+
 //customer logic
 register.onclick = () => {
   if (orderCheck >= 178 && orderCheck < 230) {
+ 
+ 
+
     customer1.style.display = "none";
     pizzabox0.style.display = "none";
     ordernumber / 0;
@@ -64,6 +74,8 @@ register.onclick = () => {
     cutCount1 / 0;
     cutCount2 / 0;
     orderCheck / 0;
+    reputace++;
+    console.log(reputace);
   }
   if (orderCheck > 300) {
     customer1.style.display = "none";
@@ -78,6 +90,8 @@ register.onclick = () => {
     cutCount1 / 0;
     cutCount2 / 0;
     orderCheck / 0;
+    reputace++;
+    console.log(reputace);
   }
   if (orderCheck >= 80 && orderCheck < 150) {
     customer1.style.display = "none";
@@ -92,6 +106,8 @@ register.onclick = () => {
     cutCount1 / 0;
     cutCount2 / 0;
     orderCheck / 0;
+    reputace++;
+    console.log(reputace);
   }
 };
 
@@ -312,7 +328,7 @@ let pepTime = 0;
 let cutCount1 = 0;
 let cutCount2 = 0;
 let orderCheck = 0;
-
+ 
 //
 
 //cooktimer
